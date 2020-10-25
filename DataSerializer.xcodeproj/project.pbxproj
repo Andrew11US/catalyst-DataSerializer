@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		018CCD7D25457864000FD721 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018CCD7C25457864000FD721 /* DataModel.swift */; };
 		01C19A642544E709002096A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C19A632544E709002096A1 /* AppDelegate.swift */; };
 		01C19A662544E709002096A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C19A652544E709002096A1 /* SceneDelegate.swift */; };
 		01C19A682544E709002096A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C19A672544E709002096A1 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		018CCD7C25457864000FD721 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		01C19A602544E709002096A1 /* DataSerializer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataSerializer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01C19A632544E709002096A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01C19A652544E709002096A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				01C19A6E2544E70A002096A1 /* LaunchScreen.storyboard */,
 				01C19A712544E70A002096A1 /* Info.plist */,
 				01C19A7A2544EC3D002096A1 /* Checkbox.swift */,
+				018CCD7C25457864000FD721 /* DataModel.swift */,
 			);
 			path = DataSerializer;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				018CCD7D25457864000FD721 /* DataModel.swift in Sources */,
 				01C19A7B2544EC3D002096A1 /* Checkbox.swift in Sources */,
 				01C19A682544E709002096A1 /* ViewController.swift in Sources */,
 				01C19A642544E709002096A1 /* AppDelegate.swift in Sources */,

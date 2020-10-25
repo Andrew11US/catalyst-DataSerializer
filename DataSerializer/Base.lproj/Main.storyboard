@@ -186,17 +186,53 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Urp-0O-gyt">
                                         <rect key="frame" x="0.0" y="427" width="728" height="110"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lll-0d-ezG">
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nrc-hW-Rqh">
                                                 <rect key="frame" x="0.0" y="0.0" width="728" height="50"/>
-                                                <color key="backgroundColor" red="0.96862745100000003" green="0.70980392160000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="kNs-0d-3tk"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
-                                                <state key="normal" title="Generate JSON">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                            </button>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JkJ-uF-VPv">
+                                                        <rect key="frame" x="0.0" y="0.0" width="236" height="50"/>
+                                                        <color key="backgroundColor" red="0.96862745100000003" green="0.70980392160000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="yQq-Fu-rh5"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                                        <state key="normal" title="Add Question">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="addQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XjX-Xx-Uec"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0L6-rZ-9nZ">
+                                                        <rect key="frame" x="246" y="0.0" width="236" height="50"/>
+                                                        <color key="backgroundColor" red="0.96862745100000003" green="0.70980392160000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="VpH-s2-HVl"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                                        <state key="normal" title="Add Topic">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="addTopic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w4D-bg-vJ3"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lll-0d-ezG">
+                                                        <rect key="frame" x="492" y="0.0" width="236" height="50"/>
+                                                        <color key="backgroundColor" red="0.96862745100000003" green="0.70980392160000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="kNs-0d-3tk"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                                        <state key="normal" title="Generate JSON">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="generate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2qG-Hl-IXS"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMt-dL-MxH">
                                                 <rect key="frame" x="0.0" y="60" width="728" height="50"/>
                                                 <color key="backgroundColor" red="0.65954603860000005" green="0.54490247780000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -210,7 +246,7 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Lorem ipsum dolor sit er elit" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fDd-k4-3mv">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fDd-k4-3mv">
                                         <rect key="frame" x="0.0" y="557" width="728" height="427"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="textColor" systemColor="labelColor"/>
@@ -230,6 +266,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addQuestionBtn" destination="JkJ-uF-VPv" id="rUm-0d-f43"/>
+                        <outlet property="addTopicBtn" destination="0L6-rZ-9nZ" id="VAu-bR-Fhc"/>
                         <outlet property="answer1TF" destination="MWX-BO-dU3" id="V9q-f9-T3W"/>
                         <outlet property="answer2TF" destination="Gfj-lX-P5q" id="uUq-bz-oGH"/>
                         <outlet property="answer3TF" destination="eoT-KP-sc4" id="GMa-LA-NFN"/>
