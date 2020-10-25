@@ -47,15 +47,15 @@ class ViewController: UIViewController {
         let correct3 = correct3Btn.isChecked ? 1 : 0
         let correct4 = correct4Btn.isChecked ? 1 : 0
         answers = [
-            Answer(text: answer1TF.text!.capitalized, isCorrect: correct1),
-            Answer(text: answer2TF.text!.capitalized, isCorrect: correct2),
-            Answer(text: answer3TF.text!.capitalized, isCorrect: correct3),
-            Answer(text: answer4TF.text!.capitalized, isCorrect: correct4),
+            Answer(text: answer1TF.text!.capitalizingFirst(), isCorrect: correct1),
+            Answer(text: answer2TF.text!.capitalizingFirst(), isCorrect: correct2),
+            Answer(text: answer3TF.text!.capitalizingFirst(), isCorrect: correct3),
+            Answer(text: answer4TF.text!.capitalizingFirst(), isCorrect: correct4),
         ].shuffled()
-        questions.append(Question(text: questionTF.text!.capitalized, answers: answers))
+        questions.append(Question(text: questionTF.text!.capitalizingFirst(), answers: answers))
         
-        topics[topics.count - 1] = Topic(title: topicTF.text!.capitalized, questions: questions)
-        section = Section(title: sectionTF.text!.capitalized, topics: topics)
+        topics[topics.count - 1] = Topic(title: topicTF.text!.capitalizingFirst(), questions: questions)
+        section = Section(title: sectionTF.text!.capitalizingFirst(), topics: topics)
     }
     
     @IBAction func addTopic(_ sender: UIButton) {
@@ -64,16 +64,16 @@ class ViewController: UIViewController {
         let correct3 = correct3Btn.isChecked ? 1 : 0
         let correct4 = correct4Btn.isChecked ? 1 : 0
         answers = [
-            Answer(text: answer1TF.text!.capitalized, isCorrect: correct1),
-            Answer(text: answer2TF.text!.capitalized, isCorrect: correct2),
-            Answer(text: answer3TF.text!.capitalized, isCorrect: correct3),
-            Answer(text: answer4TF.text!.capitalized, isCorrect: correct4),
+            Answer(text: answer1TF.text!.capitalizingFirst(), isCorrect: correct1),
+            Answer(text: answer2TF.text!.capitalizingFirst(), isCorrect: correct2),
+            Answer(text: answer3TF.text!.capitalizingFirst(), isCorrect: correct3),
+            Answer(text: answer4TF.text!.capitalizingFirst(), isCorrect: correct4),
         ].shuffled()
         questions = []
-        questions.append(Question(text: questionTF.text!.capitalized, answers: answers))
+        questions.append(Question(text: questionTF.text!.capitalizingFirst(), answers: answers))
         
-        topics.append(Topic(title: topicTF.text!.capitalized, questions: questions))
-        section = Section(title: sectionTF.text!.capitalized, topics: topics)
+        topics.append(Topic(title: topicTF.text!.capitalizingFirst(), questions: questions))
+        section = Section(title: sectionTF.text!.capitalizingFirst(), topics: topics)
     }
     
     @IBAction func generate(_ sender: UIButton) {

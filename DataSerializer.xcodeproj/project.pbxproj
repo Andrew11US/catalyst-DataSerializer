@@ -15,6 +15,7 @@
 		01C19A6D2544E70A002096A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01C19A6C2544E70A002096A1 /* Assets.xcassets */; };
 		01C19A702544E70A002096A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01C19A6E2544E70A002096A1 /* LaunchScreen.storyboard */; };
 		01C19A7B2544EC3D002096A1 /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C19A7A2544EC3D002096A1 /* Checkbox.swift */; };
+		01E9A41C2545B38D00461648 /* string+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E9A41B2545B38D00461648 /* string+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		01C19A712544E70A002096A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01C19A782544E754002096A1 /* DataSerializer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DataSerializer.entitlements; sourceTree = "<group>"; };
 		01C19A7A2544EC3D002096A1 /* Checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
+		01E9A41B2545B38D00461648 /* string+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "string+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				01C19A712544E70A002096A1 /* Info.plist */,
 				01C19A7A2544EC3D002096A1 /* Checkbox.swift */,
 				018CCD7C25457864000FD721 /* DataModel.swift */,
+				01E9A41B2545B38D00461648 /* string+Extension.swift */,
 			);
 			path = DataSerializer;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			files = (
 				018CCD7D25457864000FD721 /* DataModel.swift in Sources */,
 				01C19A7B2544EC3D002096A1 /* Checkbox.swift in Sources */,
+				01E9A41C2545B38D00461648 /* string+Extension.swift in Sources */,
 				01C19A682544E709002096A1 /* ViewController.swift in Sources */,
 				01C19A642544E709002096A1 /* AppDelegate.swift in Sources */,
 				01C19A662544E709002096A1 /* SceneDelegate.swift in Sources */,
